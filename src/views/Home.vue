@@ -12,6 +12,8 @@
 		<img src="../assets/img/demo.jpeg" alt="">
 	</div>
 	<p class="txt">hahahah</p>
+	<!-- 过滤器使用 -->
+	<p>{{num | decimaltwo}}</p>
 	<ul class="tablelist">
 		<li v-for="(item, index) in list" :key="index" class="tableitem">
 			<p>{{item.userName}} —— {{item.Address}}</p>
@@ -30,7 +32,8 @@ export default {
 	name: 'home',
 	data() {
 		return {
-			list: []
+			list: [],
+			num: 23.00111
 		}
 	},
 	computed: {

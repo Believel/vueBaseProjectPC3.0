@@ -6,9 +6,13 @@ import store from './store'
 import ELEMENTUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 
+// 引入插件
+import vueUtil from './util/vueUtil.js';
+
 // 阻止vue在启动时生成生产提示
 Vue.config.productionTip = false
 Vue.use(ELEMENTUI)
+Vue.use(vueUtil);
 
 new Vue({
   router,
