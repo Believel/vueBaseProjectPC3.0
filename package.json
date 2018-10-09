@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "alpha": "vue-cli-service --mode alpha"
+    "alpha": "vue-cli-service build --mode alpha"
   },
   "dependencies": {
     "@types/axios": "^0.14.0",
