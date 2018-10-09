@@ -3,6 +3,15 @@
     <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld :msg="count"/>
 	<hr/>
+	<!-- element-ui使用 -->
+	<el-row>
+		<el-button>默认按钮</el-button>
+		<el-button type="primary">主要按钮</el-button>
+	</el-row>
+	<div>
+		<img src="../assets/img/demo.jpeg" alt="">
+	</div>
+	<p class="txt">hahahah</p>
 	<ul class="tablelist">
 		<li v-for="(item, index) in list" :key="index" class="tableitem">
 			<p>{{item.userName}} —— {{item.Address}}</p>
@@ -54,3 +63,11 @@ export default {
 	}
 }
 </script>
+
+<style lang="scss">
+	.txt {
+		color: $pink;
+		@include font(32px, 32px);
+	}
+</style>
+
