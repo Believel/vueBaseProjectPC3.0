@@ -13,7 +13,6 @@ import vueUtil from './util/vueUtil.js';
 Vue.config.productionTip = false
 Vue.use(ELEMENTUI)
 Vue.use(vueUtil);
-
 new Vue({
   router,
   store,

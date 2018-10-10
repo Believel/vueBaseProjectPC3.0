@@ -5,6 +5,7 @@
  */
 const toastime = 3000
 let URLWEBHTTP = ''
+
 switch (process.env.NODE_ENV) {
     case 'development':
          URLWEBHTTP = "https://www.easy-mock.com/mock/5b8c9810c0b06d42b3bb5552/mockapi"; // 这里是本地请求的地址

@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    将原生事件绑定到组件： <el-button>按钮</el-button>
     <p>
       For guide and recipes on how to configure / customize this project,<br>
       check out the
@@ -35,6 +36,9 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: Number
+  },
+  mounted() {
+    console.log(this.$attrs)
   }
 }
 </script>

@@ -1,7 +1,8 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld :msg="count"/>
+	<!-- @click.native="onhandleClick" -->
+    <HelloWorld :msg="count" />
 	<hr/>
 	<!-- element-ui使用 -->
 	<el-row>
@@ -47,6 +48,9 @@ export default {
 		this.getTablelist();
 	},
 	methods: {
+		onhandleClick() {
+			alert(11)
+		},
 		async getTablelist() {
 			try {
 				let res = await get_tablelist();
