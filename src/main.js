@@ -5,7 +5,8 @@ import store from './store'
 // 引入element-ui
 import ELEMENTUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
-
+// 引入animate.css文件
+import animate from 'animate.css';
 // 引入插件
 import vueUtil from './util/vueUtil.js';
 

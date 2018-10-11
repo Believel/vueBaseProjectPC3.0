@@ -33,6 +33,15 @@ export default {
                 ? ''
                 : new Date(time).Format('yyyy年MM月dd日 hh:mm:ss')
         })
+        // 全局指令
+        Vue.directive('focus', {
+            // 当被绑定元素插入到DOM时
+            inserted: function(el, binding) {
+                console.log(el)
+                console.log(binding)
+                el.focus();
+            }
+        })
         //返回上一页
         Vue.prototype.goback = function() {
             this.$router.go(-1)

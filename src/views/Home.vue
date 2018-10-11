@@ -2,7 +2,7 @@
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
 	<!-- @click.native="onhandleClick" -->
-    <HelloWorld :msg="count" />
+    <HelloWorld :msg="count" ref="hello"/>
 	<hr/>
 	<!-- element-ui使用 -->
 	<el-row>
@@ -46,6 +46,9 @@ export default {
 	created() {
 		this.incrementStep();
 		this.getTablelist();
+	},
+	mounted() {
+		console.log(this.$refs.hello)
 	},
 	methods: {
 		onhandleClick() {

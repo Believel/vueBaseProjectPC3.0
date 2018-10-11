@@ -28,6 +28,20 @@
                 </slotScope>
             </el-col>
         </el-row>
+        <el-row>
+            <h1>过渡/动画</h1>
+            <el-col :span="6">
+                <el-button @click="show = !show">toggle</el-button>
+                <!-- 自定义过渡的类名 -->
+                <transition enter-active-class="animated fadeIn" leave-active-class="animated fadeInDown">
+                    <p v-if="show">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris facilisis enim libero, at lacinia diam fermentum id. Pellentesque habitant morbi tristique senectus et netus.</p>
+                </transition>
+            </el-col>
+            <el-col :span="6">
+                <h4>自定义指令</h4>
+                <input type="text" v-model="input1" v-focus>
+            </el-col>
+        </el-row>
     </div>
 </template>
 
@@ -37,17 +51,22 @@
     import tabPosts from '@/components/Demo/tab-posts.vue';
     import mySlot from '@/components/Demo/slot.vue';
     import slotScope from '@/components/Demo/slotScope.vue';
+    // 引入mixin文件
+    import {myMixin} from '@/util/mixin.js';
     export default {
+        mixins: [myMixin],
         data() {
             return {
                 input: '',
+                input1: '',
                 currentTab: 'Home',
                 tabs: ['Home', 'Posts', 'Archive'],
                 todos: [
                     {text: '吃饭', isComplete: false},
                     {text: '睡觉', isComplete: true},
                     {text: '打豆豆', isComplete: true}
-                ]
+                ],
+                show: true
             }
         },
         computed: {
@@ -67,6 +86,25 @@
 <style lang="scss" scoped>
     .demo {
         margin: 30px;
+        // 定义进入过渡生效时的状态
+        .bounce-enter-active {
+            animation: bounce-in .5s;
+        }
+        // 定义离开过渡生效时的状态
+        .bounce-leave-active {
+            animation: bounce-in .5s reverse;
+        }
+        @keyframes bounce-in {
+            0% {
+                transform: scale(0);
+            }
+            50% {
+                transform: scale(1.5);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
     }
 </style>
 
