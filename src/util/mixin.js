@@ -1,5 +1,5 @@
 export const myMixin = {
     mounted() {
-        console.log('haha')
+        console.log("haha");
     }
-}
+};

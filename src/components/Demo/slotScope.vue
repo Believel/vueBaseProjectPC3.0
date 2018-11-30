@@ -17,17 +17,17 @@
     </div>
 </template>
 <script>
-    export default {
-        props: {
-            todos: Array
-        }
+export default {
+    props: {
+        todos: Array
     }
+};
 </script>
 <style lang="scss" scoped>
-    .slotscope {
-        margin-top: 10px;
-        height: 120px;
-        width: 100%;
-        box-shadow: 0 0 10px #63562c;
-    }
+.slotscope {
+    margin-top: 10px;
+    height: 120px;
+    width: 100%;
+    box-shadow: 0 0 10px #63562c;
+}
 </style>

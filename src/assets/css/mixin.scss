@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
+
 @mixin bis1($url) {
     background-image: url($url);
     background-repeat: no-repeat;
@@ -16,6 +17,7 @@
     -o-border-radius: $radius;
     border-radius: $radius;
 }
+
 //定位全屏
 @mixin allcover {
     position: absolute;
@@ -30,11 +32,13 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 //上下边线颜色
 @mixin bordertb($color) {
     border-top: 1px solid $color;
     border-bottom: 1px solid $color;
 }
+
 //定位上下居中
 @mixin ct {
     position: absolute;
@@ -60,6 +64,7 @@
     margin-left: $left;
     margin-right: $right;
 }
+
 //margin左上
 @mixin marginlt($left, $top) {
     margin-left: $left;
@@ -72,9 +77,9 @@
 }
 
 //向上三角形
-@mixin triangle-up{
-    width:0;
-    height:0;
+@mixin triangle-up {
+    width: 0;
+    height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-bottom: 10px solid #F3F3F3;
@@ -82,7 +87,7 @@
 
 @mixin line {
     height: 1px;
-    background:#E7EAEC;
+    background: #E7EAEC;
 }
 
 //字体大小、行高、字体

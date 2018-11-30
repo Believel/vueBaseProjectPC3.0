@@ -6,7 +6,9 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "alpha": "vue-cli-service build --mode alpha"
+    "alpha": "vue-cli-service build --mode alpha",
+    "report": "vue-cli-service build --report",
+    "inspect": "vue-cli-service inspect"
   },
   "dependencies": {
     "@types/axios": "^0.14.0",
@@ -23,6 +25,8 @@
     "@vue/cli-plugin-eslint": "^3.0.4",
     "@vue/cli-service": "^3.0.4",
     "@vue/eslint-config-prettier": "^3.0.4",
+    "babel-plugin-component": "^1.1.1",
+    "compression-webpack-plugin": "^2.0.0",
     "node-sass": "^4.9.3",
     "sass-loader": "^7.0.1",
     "vue-template-compiler": "^2.5.17"

@@ -3,17 +3,18 @@
  * urlWenHttp: 域名地址
  * toastime: toast时间
  */
-const toastime = 3000
-let URLWEBHTTP = ''
-console.log(process.env.VUE_APP_CURRENTMODE)
+const toastime = 3000;
+let URLWEBHTTP = "";
+console.log(process.env.VUE_APP_CURRENTMODE);
 switch (process.env.VUE_APP_CURRENTMODE) {
-    case 'development':
-         URLWEBHTTP = "https://www.easy-mock.com/mock/5b8c9810c0b06d42b3bb5552/mockapi"; // 这里是本地请求的地址
+    case "development":
+        URLWEBHTTP =
+            "https://www.easy-mock.com/mock/5b8c9810c0b06d42b3bb5552/mockapi"; // 这里是本地请求的地址
         break;
-    case 'alpha': // 注意这里的名字要和.env.alpha 设置的环境名字对应起来
+    case "alpha": // 注意这里的名字要和.env.alpha 设置的环境名字对应起来
         URLWEBHTTP = ""; // 这里是测试环境中的url
         break;
-    case 'production':
+    case "production":
         URLWEBHTTP = ""; // 生产环境url
         break;
 }
@@ -21,4 +22,4 @@ switch (process.env.VUE_APP_CURRENTMODE) {
 export default {
     toastime,
     URLWEBHTTP
-}
+};

@@ -5,21 +5,41 @@
 }
 
 
-body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td {
-    outline:none;
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td {
+    outline: none;
     margin: 0;
     // padding: 0;
-    list-style-type:none;
+    list-style-type: none;
 }
 
 ::-webkit-input-placeholder {
     color: #999999;
-    font-size:14px;
+    font-size: 14px;
 }
-
-// img{
-//     width:100%;
-// }
 
 .content {
     position: absolute;

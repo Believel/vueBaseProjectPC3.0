@@ -1,5 +1,5 @@
-import vhttp from './modle/vueRequest';
-import config from '@/config.js';
+import vhttp from "./modle/vueRequest";
+import config from "@/config.js";
 
 /* API接口 */
 /**
@@ -12,5 +12,5 @@ import config from '@/config.js';
  * 规范 ： 命名前缀需要 type_*  get_baidu  post_baidu。接口地址需要添加注释.
  */
 
- // 获取表格列表
- export const get_tablelist = params => vhttp('/table/list', params, 'GET');
+// 获取表格列表
+export const get_tablelist = params => vhttp("/table/list", params, "GET");
